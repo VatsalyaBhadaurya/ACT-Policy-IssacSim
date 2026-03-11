@@ -17,3 +17,5 @@ while True:
     state = torch.tensor(obs["state"]).unsqueeze(0)
     action = model({"state": state})[0, 0].numpy()
     scene.step(action)
+
+
